@@ -20,7 +20,7 @@
       if($count == 1) {
          $_SESSION['login_user'] = $myusername;
 
-         header("location: welcome.php");
+         header("location: form.php");
       }else {
          echo "Your Login Name or Password is invalid";
       }
@@ -28,18 +28,32 @@
 ?>
 <!DOCTYPE html>
 <html>
-
    <head>
       <title>Login Page</title>
+      <link rel="stylesheet" type="text/css" href="bootstrap.css">
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
-     <div><b>Login</b></div><br>
-     <div>
-       <form action = "" method = "post">
-        <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-        <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-        <input type = "submit" value = " Submit "/><br />
+     <div class="container">
+       <h1>Login</h1>
+       <form class="form-horizontal" action = "" method = "post">
+        <div class="form-group">
+          <label class="control-label col-sm-2">Username:</label>
+          <div class="col-sm-4">
+            <input type = "text" name = "username" class = "form-control" placeholder="Enter Username.."/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2">Password:</label>
+          <div class="col-sm-4">
+            <input type = "password" name = "password" class = "form-control" placeholder="Enter Password.."/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type = "submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
       </form>
       <p>Click<a href="register.php"> Here</a> to register a new account.</p>
     </div>

@@ -20,9 +20,6 @@
 
       if($count == 1) {
          echo "This username is already taken. Please choose another one.";
-         echo "Website will reload in 5 sec....";
-         sleep(5);
-         header("Refresh:0");
       }
       else {
         $sql = "INSERT INTO users (username,password) VALUES(?, ?)";
@@ -38,7 +35,6 @@
         echo "";
       }
     }
-
   }//END if statement
 
  ?>
@@ -46,18 +42,34 @@
  <!DOCTYPE html>
  <html>
    <head>
-     <meta charset="utf-8">
-     <title>Register</title>
+     <title>Register new account</title>
+     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
-     <h1>Register new account</h1>
-
-     <form class="" action="" method="post">
-       <label>Username: </label><input type="text" name="reg_username" value=""><br><br>
-       <label>Password: </label><input type="text" name="reg_password" value=""><br><br>
-       <input type = "submit" value = " Submit "/>
-     </form><br>
-     <b><p>!!Your account was just successfully added when you get a confirmation!!</p></b>
-     <a href="login.php">Back to the Login Page</a>
+     <div class="container">
+       <h1>Register new account</h1>
+       <form class="form-horizontal" action="" method="post">
+         <div class="form-group">
+           <label class="control-label col-sm-2">Username: </label>
+           <div class="col-sm-4">
+             <input type="text" name="reg_username" value="" class="form-control" placeholder="Enter username..">
+           </div>
+         </div>
+         <div class="form-group">
+           <label class="control-label col-sm-2">Password: </label>
+           <div class="col-sm-4">
+             <input type="text" name="reg_password" value="" class="form-control" placeholder="Enter pasword..">
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="col-sm-offset-2 col-sm-10">
+             <input type = "submit" class="btn btn-default"value = "Submit"/>
+           </div>
+         </div>
+       </form>
+       <p style="color: white">!!!Your account was just successfully added when you get a confirmation!!!</p>
+       <a href="login.php">Back to the Login Page</a>
+     </div>
    </body>
  </html>

@@ -1,7 +1,5 @@
 body
 {
-	text-align: center;
-	margin: 20px;		/* shift whole page down by 25 pixels */
 	background-color: #222222;
   color: orange;
 }
