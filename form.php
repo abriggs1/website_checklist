@@ -1,145 +1,185 @@
-<?php
-	include ("session.php");
-
- ?>
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-
 <head>
-	<title>Checklist for Bachelor of Arts in Information Technology</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link href="style.css" rel="stylesheet" type="text/css">
+<title>Checklist for Bachelor of Arts in Information Technology</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="checkstyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="container">
-	<h1>Checklist for your IT courses</h1>
-	<h4>MAJOR COURSES</h4>
-  <form action="process.php" method="post">
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox1" value="">MATH 140 Elementary Statistics</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox2" value="">BUSN 201 Principles of Economics I</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox3" value="">BUSN 210 Principles of Management</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox4" value="">BUSN 211 Accounting Principles I </label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox5" value="">BUSN 305 Principles of Marketing</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox6" value="">BUSN 322 Principles of Finance</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox7" value="">BUSN 325 Professional Communication</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox8" value="">BUSN 403 Business Law and Ethics </label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox9" value="">MATH 220 Discrete Math</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox10" value="">CISC 105 Problem Solvoing and Algorithms</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox11" value="">CISC 200 Mgmt Info Systems &amp; Sys Analysis</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox12" value="">CISC 215 Database Management</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox13" value="">CISC 310 Networking Fundamentals</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox14" value="">CISC 325 Information Assurance</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox15" value="">CISC 330 Software Engineering</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox16" value="">CISC 322 Electronic Commerce</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox17" value="">CISC 375 Web Design</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox18" value="">CISC xxx Enterprise Resource Planning Systems</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox19" value="">CISC xxx Systems Administration</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox20" value="">CISC 442 Information Technology</label><br>
-  	</div>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox21" value="">BUSN 352 Business Service-Learning Practicum</label><br>
-  	</div>
-  	<h4>GENERAL EDUCATION CORE</h4>
-    <h5>College Success Skills (1 hour)</h5>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox22" value="">OREN 105 or OREN 106</label><br>
-  	</div>
-    <h5>Communication (6 hours Composition and 3 hours Speech required)</h5>
-  	<div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox23" value="">ENGL 110 or validation by ACT/SAT</label><br>
-  	</div>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox24" value="">ENGL 111 or ENGH 111 or validation by ACT/SAT</label><br>
-  	</div>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox25" value="">*SPCH 101 (Public Speaking or interpersonal and/or small group speech)</label><br>
-  	</div>
-    <h5>Mathematics (3 hours Statistics or higher)</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox26" value="">*MATH 140 or a higher level math (*MATH 140 is required in BUSN core)</label><br>
-  	</div>
-    <h5>Arts and Humanities (6 hours -- 3 hours must be in literature)</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox27" value="">Literature: ENGL 201, 204, 205, 217, 219, 223, 224, 225, 227, 228, 231, 250</label><br>
-  	</div>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox28" value="">Fine Arts and Humanities: ARTS 110, 204, 208; ENGL 120, HNRS 101, </label><br>
-  	</div>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox29" value="">HUMA 222, 223; MUSC 101, RELG 101, 102, 201, 230; THEA 104</label><br>
-  	</div>
-    <h5>Natural Science (4 hours -- lab required)</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox30" value="">BIOL 105, 110, 120, 251, 252; CHEM 101, 102; EVSC 111, GEOL 101, NSCI 105, PHYS 201, 202</label><br>
-  	</div>
-    <h5>Behavioral Wellness &amp; Social Sciences (6 hours; may use only 3 credits from the wellness area)</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox31" value="">Social Science: *BUSN 201, *202; GEOG 200, POLS 110, 210, 220, 230</label><br>
-  	</div>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox32" value="">PSYC 101, 206, 299; SOCI 101, 105</label><br>
-  	</div>
-    <p>BUSN 201 and BUSN 202 are required in the Business core.</p>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox33" value="">Wellness: PHED 201, PSYC 102</label><br>
-  	</div>
-    <h5>History (6 hours)</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox34" value="">HIST 101, 102, 201, 202, HIST/POLS 280</label><br>
-  	</div>
-    <h5>Religion (3 hours) -- Must be a different religion course if used above to
-  satisfy a requirement in the Arts and Humanities core</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox35" value="">RELG 101, 102, 230 </label><br>
-  	</div>
-    <h5>Civic Studies (3 hours) -- Must be a different POLS course if used above.</h5>
-    <div class="checkbox col-sm-offset-1">
-  		<label><input type="checkbox" name="checkbox36" value="">CIVS 251, CRJU 105, POLS 110, 210, 220, 230</label><br>
-  	</div>
-    <h5>Arts and Lecture Series (no credit hours)</h5>
-  </form>
+
+<div id="mainForm">
+
+<div id="formHeader">
+	<h2 class="formInfo">Checklist for Bachelor of Arts in Information Technology</h2>
 </div>
+
+<br />
+
+<h3 class="formInfo">Please mark below which courses you have taken.</h3>
+	
+<form id="form1" name="form1" method="post" action="form.php"> <!-- Begin Form -->
+	<ul class="mainForm" id="majorcourses">
+		
+		<li><h3>Major Courses</h3></li>
+
+		<li class="mainForm"><label for="math140">MATH 140 Elementary Statistics:</label></li>
+		
+		<li class="mainForm">	
+			<input type="radio" name="math140" value="1" id="math140_1" />Yes
+			<input type="radio" name="math140" value="0" id="math140_0" />No
+		</li>
+
+		<li class="mainForm"><label for="busn201">BUSN 201 Principles of Economics I:</label></li>
+	
+		<li class="mainForm">
+			<input type="radio" name="busn201" value="1" id="busn201_1" />Yes
+			<input type="radio" name="busn201" value="0" id="busn201_0" />No
+		</li>
+
+		<li class="mainForm"><label for="busn210">BUSN 210 Principles of Management:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="busn210" value="1" id="busn210_1" />Yes
+			<input type="radio" name="busn210" value="0" id="busn210_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="busn211">BUSN 211 Accounting Principles I:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="busn211" value="1" id="busn211_1" />Yes
+			<input type="radio" name="busn211" value="0" id="busn211_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="busn305">BUSN 305 Principles of Marketing:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="busn305" value="1" id="busn305_1" />Yes
+			<input type="radio" name="busn305" value="0" id="busn305_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="busn322">BUSN 322 Principles of Finance:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="busn322" value="1" id="busn322_1" />Yes
+			<input type="radio" name="busn322" value="0" id="busn322_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="busn325">BUSN 325 Professional Communication:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="busn325" value="1" id="busn325_1" />Yes
+			<input type="radio" name="busn325" value="0" id="busn325_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="busn403">BUSN 403 Business Law and Ethics:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="busn403" value="1" id="busn403_1" />Yes
+			<input type="radio" name="busn403" value="0" id="busn403_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="math220">MATH 220 Discrete Math:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="math220" value="1" id="math220_1" />Yes
+			<input type="radio" name="math220" value="0" id="math220_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc105">CISC 105 Problem Solvoing and Algorithms:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc105" value="1" id="cisc105_1" />Yes
+			<input type="radio" name="cisc105" value="0" id="cisc105_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc200">CISC 200 Mgmt Info Systems and Sys Analysis:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc200" value="1" id="cisc200_1" />Yes
+			<input type="radio" name="cisc200" value="0" id="cisc200_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc215">CISC 215 Database Management:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc215" value="1" id="cisc215_1" />Yes
+			<input type="radio" name="cisc215" value="0" id="cisc215_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc310">CISC 310 Networking Fundamentals:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc310" value="1" id="cisc310_1" />Yes
+			<input type="radio" name="cisc310" value="0" id="cisc310_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc325">CISC 325 Information Assurance:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc325" value="1" id="cisc325_1" />Yes
+			<input type="radio" name="cisc325" value="0" id="cisc325_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc330">CISC 330 Software Engineering:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc330" value="1" id="cisc330_1" />Yes
+			<input type="radio" name="cisc330" value="0" id="cisc330_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc322">CISC 322 Electronic Commerce:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc322" value="1" id="cisc322_1" />Yes
+			<input type="radio" name="cisc322" value="0" id="cisc322_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc375">CISC 375 Web Design:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc375" value="1" id="cisc375_1" />Yes
+			<input type="radio" name="cisc375" value="0" id="cisc375_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc_erps">CISC xxx Enterprise Resource Planning Systems:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc_erps" value="1" id="cisc_erps_1" />Yes
+			<input type="radio" name="cisc_erps" value="0" id="cisc_erps_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc_sa">CISC xxx Systems Administration:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc_sa" value="1" id="cisc_sa_1" />Yes
+			<input type="radio" name="cisc_sa" value="0" id="cisc_sa_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc442">CISC 442 Information Technology:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc442" value="1" id="cisc442_1" />Yes
+			<input type="radio" name="cisc442" value="0" id="cisc442_0" />No
+		</li>
+		
+		<li class="mainForm"><label for="cisc352">BUSN 352 Business Service-Learning Practicum:</label></li>
+		
+		<li class="mainForm">
+			<input type="radio" name="cisc352" value="1" id="cisc352_1" />Yes
+			<input type="radio" name="cisc352" value="0" id="cisc352_0" />No
+		</li>
+		
+		<br />
+		
+		<?php include'processor.php'; ?>
+		
+		<li class="mainForm">
+			<input id="saveForm" class="mainForm" type="submit" value="Save Information" /> <!-- Submit Button -->
+		</li>
+	</ul>		
+</form> <!-- End Form -->
+
+</div>
+
 </body>
 </html>
